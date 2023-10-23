@@ -1,0 +1,99 @@
+<div class="jumbotron jumbotron-fluid white">
+
+
+   <div class="container mgrAll2">
+      <button type="button" class="btn btn-warning btn-circle btn-lg floatRight bgRed"  mat-dialog-close  matTooltip="close"  style="margin:5px;"> &#x2716;  </button>
+   
+  
+  
+    <div class="profile">
+      
+         <img src="../assets/yuvraj776524.jpg" alt="User Avatar"> 
+ 
+      <span class="name">
+         <h3>Author : <span class="badge badge-secondary">{{selectedBlogData.author |titlecase}} </span> 
+            <br>
+            <span class="v badge badge-secondaryr"> <h6 class="badge bg-secondary"> 23 Followers </h6> </span>
+            <br>
+            <!-- <span class="v badge badge-secondaryr"><a href="">Follow</a></span> -->
+            
+         </h3>
+         
+      </span>
+    </div>
+    
+   
+      <hr>
+      <h1 class="display-4 font-sans-serif">{{selectedBlogData.title | titlecase}}  </h1> 
+
+      <p class="lead line-height" [innerHTML]="selectedBlogData.content"></p>
+
+      <hr>
+   
+      <mat-dialog-actions align="end" class="mid-white" (click)="emptyCall()">
+
+         On : {{selectedBlogData.created_on |date :'shortDate'}}      
+        
+      
+          <button mat-raised-button matTooltip="Like" class="floatRight"  (click)="updateLikes(selectedBlogData)" >
+              {{selectedBlogData.likes}}  <mat-icon [ngClass]="{'pink': isLikedBtn==true }">favorite</mat-icon> 
+           </button> 
+
+      </mat-dialog-actions>
+
+
+      <div [ngClass]="{'display-inline-divs': isSmallScreen == true}">
+         <div class="card bg-lighted-black color-white" [ngClass]="{'width50': isSmallScreen == true, 'width100': isSmallScreen ==false,'mgr-all-3-per': isSmallScreen ==false}">
+           <div class="card-header">
+             <h2>Read more </h2>
+           </div>
+           <ul class="list-group list-group-flush bg-lighted-black color-white">
+
+            
+             <li class="list-group-item bg-lighted-black color-white" *ngFor="let readMore of readMoreList" (click)="nextPost(readMore.id)">
+              <span style="color: wheat;">  <h3> {{readMore.title}} </h3>
+
+               <span style="color:black;">
+                  On : {{readMore.created_on |date :'shortDate'}}   
+               </span>
+               <span><span class="vr" style="color:black;"></span></span>
+               <span style="color:black;">
+                  {{readMore.likes}}  <mat-icon class="pink">favorite</mat-icon> 
+               </span>
+
+            </span>
+            </li>
+            
+           </ul>
+         </div>
+       
+         <div class="vr vertical-line" *ngIf="isSmallScreen"></div>
+
+         <div class="card bg-lighted-black color-white" [ngClass]="{'width50': isSmallScreen == true , 'width100': isSmallScreen ==false,'mgr-all-3-per': isSmallScreen ==false}">
+            <div class="card-header">
+               <h2> Explore more</h2>
+            </div>
+            <ul class="list-group list-group-flush bg-lighted-black color-white"> 
+               <li class="list-group-item bg-lighted-black color-white" *ngFor="let exploreMore of exploreMoreList" (click)="nextPost(exploreMore.id)">
+                 
+                  <span>
+                     <h3 style="color: wheat;">
+                        {{exploreMore.title}}
+                     </h3>
+
+                     <span>
+                        On : {{exploreMore.created_on |date :'shortDate'}}   
+                     </span>
+                     <span style="color:black;"><span class="vr"></span></span>
+                     <span>
+                        {{exploreMore.likes}}  <mat-icon class="pink">favorite</mat-icon> 
+                     </span>
+                  </span>
+               </li>
+            </ul>
+          </div>
+       </div>
+       
+   </div>
+
+ </div>

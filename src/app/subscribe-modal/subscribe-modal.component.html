@@ -1,0 +1,45 @@
+
+
+
+    <div *ngIf="subscibeStage==1">
+        <h1 mat-dialog-title>Subscribing to our DevOwl community ... </h1>
+        <div mat-dialog-content>
+          <div mat-form-field appearance="fill">
+            <mat-spinner class="mgrleft30"></mat-spinner>
+          </div>
+        </div>
+        <div mat-dialog-actions>
+          <button mat-button class="btn btn-primary"  [mat-dialog-close]="data" cdkFocusInitial>No Thanks</button>
+        </div>
+        
+    </div>
+
+    <div *ngIf="subscibeStage==2" >
+        <h1 mat-dialog-title>Message From DevOwl Community</h1>
+        <div mat-dialog-content>
+          <div mat-form-field appearance="fill">
+            <span mat-label>{{subscribeMsg}}</span>
+          </div>
+        </div>
+        <div mat-dialog-actions>
+          <button mat-button  class="btn btn-primary" [mat-dialog-close]="data" cdkFocusInitial>close</button>
+        </div>
+
+    </div>
+  
+    <!--default case when there are no matches -->
+    <div *ngIf="subscibeStage==0">
+        <h1 mat-dialog-title>Subscribe to our community</h1>
+        <div mat-dialog-content>
+          <div mat-form-field appearance="fill">
+            <input matInput [(ngModel)]="userName" placeholder="Name" class="mgrAll2">
+            <input matInput [(ngModel)]="emailId" placeholder="EmailId" class="mgrAll2">
+          </div>
+        </div>
+        <div mat-dialog-actions>
+         
+          <button mat-button class="btn btn-primary" [mat-dialog-close]="data" cdkFocusInitial>No Thanks</button>
+          <button mat-button  class="btn btn-primary"  (click)="onNoClick()"><mat-icon>notifications</mat-icon>Subscribe</button>
+        </div>
+    </div>
+

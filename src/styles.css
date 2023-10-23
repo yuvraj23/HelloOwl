@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mgrleft10{
+    margin-left:10px  !important ;
+}
+
+
+.align-center-class{
+    justify-content: center;
+}
+
+.mgrleft20{
+    margin-left:20px  !important ;
+}
+
+.remove-border{
+    border: none !important;
+}
+
+
+.wheat-color{
+    color: wheat;
+}
+

@@ -1,0 +1,297 @@
+.toolbar-item-spacer {
+    flex: 1 1 auto;
+}
+
+.app-container {
+    height: 90%;
+    margin: 0;
+}  
+
+.app-sidenav {
+    width: 230px;
+}
+
+.app-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-red{
+    color: red;
+}
+
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  max-height: 200vh; 
+}
+.wrapper > div {
+  line-height: 50px;
+  height: 50px;
+  margin: 5px;
+  text-align: center;
+}
+
+.mrgtop3{
+  margin-top: 3%;
+}
+
+.mrgbtm3{
+  margin-bottom:3%;
+}
+.mrgleft3{
+  margin-left:3%;
+}
+
+
+.align-txt-center{
+  text-align: center;
+
+}
+
+
+.mrgAll20{
+  margin:20%;
+}
+
+.mgrleft30{
+  margin-left: 30%;
+}
+
+.fullscreen-dialog {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: 100%;
+  height: 100%;
+  }
+
+
+
+.font-size70{
+font-size: 70px;;
+}
+
+
+.btn-sidebar-close{
+  float: left;
+  position: relative;
+  top: 50%;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  z-index:1;
+}
+
+.mgrleft5{
+  margin-left: 5%;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+.mgrright5{
+  margin-right: 5%;
+}
+
+.bg-lighted-black{
+  background-color: #343a40;
+}
+
+.mgrtb3{
+  margin-top: 3%;
+  margin-bottom:5% ;
+}
+
+.blog-info {
+  font-size: 14px;
+  color: #eee;
+}
+
+.blog-info i {
+  margin-right: 5px;
+  color: #bbb;
+}
+
+.blog-info span {
+  color: #fff;
+}
+
+.mgr-all{
+  margin: 2%;
+}
+
+.mgr-right{
+  margin-right: 5%;
+}
+
+.avatar {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 35%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.color-white{
+  color: wheat;
+}
+
+
+.mgr-all-no-data-10{
+  margin: 5%;
+}
+
+
+
